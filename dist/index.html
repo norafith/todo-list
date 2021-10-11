@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<head>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta charset='utf-8'>
+    <link rel='preconnect" href="https://fonts.googleapis.com'>
+    <link rel='preconnect" href="https://fonts.gstatic.com' crossorigin>
+    <link href='https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap' rel='stylesheet'>
+    <link rel='icon' href='../src/images/favicon.png'>
+    <title>Todo list</title>
+    <script src='main.js' defer></script>
+</head>
+<body>
+    <div id='main-container'>
+        <header class='page-bar'>
+            <h2>Todo list</h2>
+            <div id='mobile-menu-open'></div>
+        </header>
+        <nav id='tabs-container'>
+            <div id='inbox' class='tab'>Inbox</div>
+            <div id='today' class='tab'>Today</div>
+            <div id='creation-project-container'>
+                <input id='project-title' type='text' placeholder='Project title...' minlength='5'>
+                <button id='create-project-btn' type='button'>New project!</button>
+            </div>
+            <div id='project-list'>
+            </div>
+        </nav>
+        <section id='task-section'>
+            <div id='creation-task-container'>
+                <input id='task-title-input' type='text' placeholder='Task title...'>
+                <input id='task-date-input' type='datetime-local'>
+                <button id='create-task-btn' type='button'>New task!</button>
+            </div> 
+            <div id='all-task-container'>
+            </div>
+        </section>
+        <footer class='page-bar'>
+            <small>made by <a id='author-link' href='https://github.com/norisgore'>norisgore</a></small>
+        </footer>
+    </div>
+</body>
