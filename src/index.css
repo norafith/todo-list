@@ -103,9 +103,9 @@ footer.page-bar {
     justify-content: space-between;
     box-sizing: border-box;
     cursor: pointer;
-    padding: 10px;
+    transition: 0.1s;
     width: 100%;
-    height: calc(var(--input-height) + var(--input-padding));
+    height: calc(var(--input-height) + var(--input-padding) + 10px);
 }
 
 #project-list > .tab {
@@ -126,7 +126,8 @@ footer.page-bar {
 
 .active-tab {
     background-color: #C2C2C2;
-    color: white;
+    color: #161A1D;
+    font-weight: bold;
 }
 
 #task-section {

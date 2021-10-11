@@ -40,7 +40,6 @@ function createTaskElement(taskTitle, taskDate, taskCompletion=false, rendering=
                 completeButton.textContent = '✔';
             }
             let taskTitle = e.target.parentNode.parentNode.firstChild.firstChild.textContent; // always get a taskTitle element, because it is always comes first
-            console.log(taskTitle);
             changeCompletionState(taskTitle, tab);
         }
 

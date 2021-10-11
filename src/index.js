@@ -11,7 +11,6 @@ if (localStorage.getItem('Inbox') === null) {
 
 function initTab(element) {
     currTab = element.textContent.trim();
-    console.log('currTab: ', currTab);
 }
 
 const tabs = document.querySelectorAll('.tab');
