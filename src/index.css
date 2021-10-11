@@ -162,6 +162,7 @@ footer.page-bar {
     background-color: #161A1D;
     border: 1px solid #C2C2C2;
     border-radius: 25px;
+    box-shadow: 0 0 15px #161A1D;
     padding: 10px 30px;
     margin: 15px 25px;
     width: 200px;
