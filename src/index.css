@@ -220,10 +220,20 @@ button {
 }
 
 .complete-task-btn.undone {
+    background-image: url('./images/x-mark.png');
+    background-clip: padding-box;
+    background-size: 35px;
+    background-position: center;
+    background-repeat: no-repeat;
     background-color: #A4161A;
 }
 
 .complete-task-btn.done {
+    background-image: url('./images/checkmark.png');
+    background-clip: padding-box;
+    background-size: 35px;
+    background-position: center;
+    background-repeat: no-repeat;
     background-color: #108637;
 }
 

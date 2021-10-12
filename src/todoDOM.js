@@ -32,12 +32,10 @@ function createTaskElement(taskTitle, taskDate, taskCompletion=false, rendering=
             if (e.target.classList.contains('done')) {
                 e.target.classList.remove('done');
                 e.target.classList.add('undone');
-                completeButton.textContent = '✖';
             }
             else {
                 e.target.classList.remove('undone');
                 e.target.classList.add('done');
-                completeButton.textContent = '✔';
             }
             let taskTitle = e.target.parentNode.parentNode.firstChild.firstChild.textContent; // always get a taskTitle element, because it is always comes first
             changeCompletionState(taskTitle, tab);
@@ -57,10 +55,8 @@ function createTaskElement(taskTitle, taskDate, taskCompletion=false, rendering=
         completeButton.classList.add('complete-task-btn');
         if (taskCompletion) {
             completeButton.classList.add('done');
-            completeButton.textContent = '✔';
         } else {
             completeButton.classList.add('undone');
-            completeButton.textContent = '✖';
         }
         completeButton.addEventListener('click', changeCompleteButtonState);
 
